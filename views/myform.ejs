@@ -1,0 +1,15 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Comment Section</h1>
+        <p>add comments to any page on the web ...</p>
+    </div>
+
+    <form method="post" action="/processform">
+      Email: <input type="text" name="url"> <br><br>
+      Comments: <textarea name="comment"></textarea>
+      <!-- <input type="submit"> -->
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+<%- include('bootfooter') -%>
